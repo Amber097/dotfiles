@@ -9,17 +9,20 @@ Usage
 ---
 
 1. Place dotfiles directory to home.
-2. ``bash ~/dotfiles/update.sh`` to place dotfiles under dotfiles directory to home directory.
+2. ``$ bash ~/dotfiles/update.sh`` to place dotfiles under dotfiles directory to home directory.
 
-When edit dotfiles(e.g. ~/.bashrc) under home, ``dotup`` to backup them to dotfiles directory.
+Write dotfiles you want to manage in update.sh.
 
+If you edit dotfiles(e.g. ~/.bashrc) under home, ``$ dotup`` to backup them to dotfiles directory.
+(``dotup`` is alias of update.sh defined at bashrc.)
+It executes backups depending on their timestamps.
 
 Option
 ---
 
 ### for auth
 
-Create ~/dotfiles/.secret for authentications and write informations(id,pw,etc).
+Create ~/dotfiles/.secret and write informations(id,pw,etc).
 
 ### avoids conflicts with other's dotfiles
 
@@ -36,3 +39,4 @@ TODO
 Simplify signature scheme
 1. Get uid executing update.sh
 2. Compare dotfiles with uid when setup and backup
+
