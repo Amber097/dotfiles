@@ -1,8 +1,16 @@
 dotfiles
 ===
 
-This includes a shell script and some configurations to manage dotfiles.
+These files are my own backups and a shell script and some configurations to manage dotfiles.
 
+TODO
+---
+
+Use symbolic links to access dotfiles
+
+Simplify signature scheme
+1. Get uid executing update.sh
+2. Compare dotfiles with uid when setup and backup
 
 
 Usage
@@ -30,13 +38,4 @@ If other users may exist in the same environment, write "signature" in dotfiles.
 Default is "oceansatealaska"(it's mine!).
 Please replase it with your own string for all dotfiles and update.sh.
 It avoids to overwrite your backups by someone's dotfiles.
-
-
-
-TODO
----
-
-Simplify signature scheme
-1. Get uid executing update.sh
-2. Compare dotfiles with uid when setup and backup
 
