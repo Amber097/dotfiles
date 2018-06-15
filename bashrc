@@ -31,7 +31,7 @@ user_def () {
     alias vlm='less /var/log/messages'
     alias dotup='bash '"${BACKUP_DIR}"'/update.sh'
     alias ucomment='grep -v -E '\''^$|^ *#'\'''
-        # Remark: Use '\' when escape '
+        # Note: Use '\' when escape '
         #       e.g.
         #       alias cmd='awk '\''{print $1}'\'''
 
