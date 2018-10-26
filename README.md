@@ -36,6 +36,6 @@ Create ~/dotfiles/.secret and write informations(id,pw,etc).
 
 If other users may exist in the same environment, write "signature" in dotfiles.
 Default is "oceansatealaska"(it's mine!).
-Please replase it with your own string for all dotfiles and update.sh.
+Please replace it with your own string for all dotfiles and update.sh.
 It avoids to overwrite your backups by someone's dotfiles.
 
