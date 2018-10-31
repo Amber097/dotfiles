@@ -1,6 +1,6 @@
 #!/bin/bash
 
-BACKUP_DIR=~/dotfiles
+BACKUP_DIR=~/git/dotfiles
 DOT_FILES=(
   tmux.conf
   vimrc
