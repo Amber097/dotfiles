@@ -12,8 +12,6 @@ global_def () {
 
 
 # User specific aliases and functions
-SRC_DIR=~/git/dotfiles
-SECRET_FILE=${SRC_DIR}/.secret
 user_def () {
 
   # Alias
