@@ -10,7 +10,7 @@ CONF=( .bash_profile
 )
 
 cp_rc () {
-  ln -sf ${SRC_DIR}/$1 ~/$1
+  ln -s ${SRC_DIR}/$1 ~/$1
 }
 
 backup () {
