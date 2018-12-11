@@ -1,5 +1,4 @@
 # .bashrc
-# signature:    oceansatealaska
 
 # Source global definitions
 global_def () {
@@ -38,4 +37,10 @@ if [ "$#" = "1" ] && [ "$1" = "user_def" ]; then
 else
   global_def
   user_def
+fi
+
+if [ -e "~/.pyenv" ]; then
+  export PATH="/home/amber/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
