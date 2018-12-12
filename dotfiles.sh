@@ -19,12 +19,15 @@ backup () {
   git push origin master
 }
 
-for e in ${CONF[@]}; do
-  if [ ! -e ~/$e ]; then
-    cp_rc $e
-    echo "Link to ~/$e was created."
-  else
-    echo "~/$e already exists. Cannot create a symbolic link."
-  fi
-done
+[ "$#" = "1" ] && [ "$1" = "backup" ] && backup
 
+if [ "$#" = "0" ]; then
+  for e in ${CONF[@]}; do
+    if [ ! -e ~/$e ]; then
+      cp_rc $e
+      echo "Link to ~/$e was created."
+    else
+      echo "~/$e already exists. Cannot create a symbolic link."
+    fi
+  done
+fi
