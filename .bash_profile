@@ -6,8 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-SRC_DIR=~/git/dotfiles
-SECRET_FILE=${SRC_DIR}/.secret
+SECRET_FILE=$HOME/.secret
 user_def () {
   # Proxy Configuration
   if [ -e ${SECRET_FILE} ]; then
