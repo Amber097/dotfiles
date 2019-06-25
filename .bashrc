@@ -19,7 +19,7 @@ user_def () {
   alias cd-='cd -'
   alias la='ls -al --color=auto'
   alias ll.='ls -dl .* --color=auto'
-  alias less='less -NSR'
+  alias less='less -NR'
   if which vim &> /dev/null; then
     alias vi='vim'
   fi
