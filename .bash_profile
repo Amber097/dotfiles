@@ -21,7 +21,14 @@ user_def
 
 # General
 
-PATH=$PATH:$HOME/bin
+if [ -e $HOME/bin ]; then
+  PATH=$PATH:$HOME/bin
+fi
+
+if [ -e $HOME/.local/bin ]; then
+  PATH=$PATH:$HOME/.local/bin
+fi
+
 export PATH
 
 # pyenv

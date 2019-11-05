@@ -13,6 +13,9 @@ global_def () {
 # User specific aliases and functions
 user_def () {
 
+  #export PS1='[\u@\h \W]\$'
+  export PS1='\n\[\033[32m\]\u@\h\[\033[0m\] \[\033[33m\]\w\[\033[0m\]\n$ '
+
   # Alias
   alias ..='cd ..'
   alias cd..='cd ..'
