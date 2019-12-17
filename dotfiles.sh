@@ -7,6 +7,8 @@ CONF=( .bash_profile
        .vimrc
        .zshrc
        .tmux.conf
+       .tmux1.conf
+       .tmux2.conf
 )
 
 cp_rc () {
