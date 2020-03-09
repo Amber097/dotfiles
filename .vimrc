@@ -1,6 +1,7 @@
 " signature: oceansatealaska
 
 color pablo
+syntax on
 set fenc=utf-8
 set number
 set title
