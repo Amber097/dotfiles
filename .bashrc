@@ -20,6 +20,7 @@ user_def () {
   alias ..='cd ..'
   alias cd..='cd ..'
   alias cd-='cd -'
+  alias l='ls -CF --color=auto'
   alias la='ls -al --color=auto'
   alias ll.='ls -dl .* --color=auto'
   if which vim &> /dev/null; then
